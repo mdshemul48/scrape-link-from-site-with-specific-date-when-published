@@ -1,11 +1,18 @@
 # Scrape link from site with specific date when published
 
 
-#### Run this command for first time only
+#### Run this command for first time only 
 
 ```sh
 $ pip install requirements.txt
 ```
+and update chromedriver.exe according to your Chrome Browser.
+
+now open ``main.py`` and replace "chrome_default_path" variable path according to your browser default path.
+```sh
+chrome_default_path = r"past your browser default profile path here"
+```
+
 #Note: you need python and pip installed on your system.
 
 ### How to use

@@ -4,6 +4,9 @@ import re
 import optparse
 
 
+chrome_default_path = r"C:\Users\mdshe\AppData\Local\Google\Chrome\User Data\Default"
+
+
 def get_argument():
     parsar = optparse.OptionParser()
     parsar.add_option("-u", "--user_id", dest="user_id", help="enter your user id like 26,23,45")
@@ -20,7 +23,7 @@ def get_argument():
 
 
 def get_html_code(user_id, page):
-    chrome_default_path = r"C:\Users\mdshe\AppData\Local\Google\Chrome\User Data\Default"
+    global chrome_default_path
     options = webdriver.ChromeOptions()
     options.add_argument(f"user-data-dir={chrome_default_path}")
     browser = webdriver.Chrome(executable_path="chromedriver.exe", options=options)
