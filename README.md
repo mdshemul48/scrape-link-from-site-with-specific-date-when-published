@@ -6,7 +6,7 @@
 ```sh
 $ pip install requirements.txt
 ```
-and update chromedriver.exe according to your Chrome Browser.
+and update chromedriver.exe according to your Chrome Browser version.
 
 now open ``main.py`` and replace "chrome_default_path" variable path according to your browser default path.
 ```sh
