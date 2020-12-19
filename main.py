@@ -7,7 +7,7 @@ import optparse
 def get_argument():
     parsar = optparse.OptionParser()
     parsar.add_option("-u", "--user_id", dest="user_id", help="enter your user id like 26,23,45")
-    parsar.add_option("-t", "--time", dest="date", help="Enter date and time")
+    parsar.add_option("-d", "--date", dest="date", help="Enter date and time")
     parsar.add_option("-p", "--page", dest="page", help="Enter page which you want to scan")
     options, arguments = parsar.parse_args()
     if not options.user_id:
